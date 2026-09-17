@@ -18,6 +18,7 @@ public class Odometry extends LinearOpMode {
 
 
     public void configurePinpoint() {
+        //This tells the computer where the odometry pods are on the robot;
         pinpoint.setOffsets(-84.0, -168.0, DistanceUnit.MM);
         pinpoint.setEncoderResolution(GoBildaPinpointDriver.GoBildaOdometryPods.goBILDA_4_BAR_POD);
         pinpoint.setEncoderDirections(GoBildaPinpointDriver.EncoderDirection.FORWARD,
